@@ -25,6 +25,7 @@ body {
     border-bottom: 1px solid black;
     justify-content: space-around;
     white-space: pre-wrap;
+    text-overflow: ellipsis;
 }
 .userListRows > div {
     padding: 20px;
