@@ -1,0 +1,31 @@
+body {
+    font-family:Arial, Helvetica, sans-serif; 
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.header{
+    background-color: dodgerblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    justify-content: space-evenly;
+    font-weight: bold;
+    padding: 20px;
+
+}
+.userListRows {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+    white-space: pre-wrap;
+}
+.userListRows > div {
+    padding: 20px;
+}

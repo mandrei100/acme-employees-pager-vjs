@@ -9,12 +9,14 @@ const myFunction = async()=> {
     const json = await response.json(); // convert response to JSON data; .json() also needs the await keyword
 
     const userList = json.users;
-    console.log(userList);
+    
     const userArray = userList.map(data => `
+    <div class='userListRows'>
     <div>${data.firstName}</div>
     <div>${data.lastName}</div>
     <div>${data.email}</div>
     <div>${data.title}</div>
+    </div>
     `).join('');
     document.querySelector('#usersList').innerHTML = userArray
     //userList.innerHTML = userArray;
